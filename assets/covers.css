@@ -1,0 +1,65 @@
+/* Cover integration for the workshop overview. The single optimized sprite contains all nine finished front covers. */
+#werkstaetten .workshop {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding-right: 122px;
+}
+
+#werkstaetten .workshop::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 22px;
+  width: 76px;
+  aspect-ratio: 2 / 3;
+  background-image: url('covers/covers-sprite.jpg');
+  background-repeat: no-repeat;
+  background-size: 300% 300%;
+  border: 1px solid rgba(196,165,106,.34);
+  box-shadow: 0 12px 28px rgba(0,0,0,.44);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+#werkstaetten .workshop:hover::before {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(0,0,0,.52);
+}
+
+#werkstaetten .workshop:nth-child(1)::before { background-position: 0% 0%; }
+#werkstaetten .workshop:nth-child(2)::before { background-position: 50% 0%; }
+#werkstaetten .workshop:nth-child(3)::before { background-position: 100% 0%; }
+#werkstaetten .workshop:nth-child(4)::before { background-position: 0% 50%; }
+#werkstaetten .workshop:nth-child(5)::before { background-position: 50% 50%; }
+#werkstaetten .workshop:nth-child(6)::before { background-position: 100% 50%; }
+#werkstaetten .workshop:nth-child(7)::before { background-position: 0% 100%; }
+#werkstaetten .workshop:nth-child(8)::before { background-position: 50% 100%; }
+#werkstaetten .workshop:nth-child(9)::before { background-position: 100% 100%; }
+
+#werkstaetten .workshop h3,
+#werkstaetten .workshop p {
+  position: relative;
+  z-index: 1;
+}
+
+#werkstaetten .workshop-wide {
+  padding-right: 148px;
+}
+
+#werkstaetten .workshop-wide::before {
+  width: 88px;
+}
+
+@media (max-width: 620px) {
+  #werkstaetten .workshop,
+  #werkstaetten .workshop-wide {
+    padding-right: 105px;
+  }
+
+  #werkstaetten .workshop::before,
+  #werkstaetten .workshop-wide::before {
+    width: 64px;
+    right: 18px;
+    top: 20px;
+  }
+}
