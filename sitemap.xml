@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://autorenhandwerk.com/</loc>
-  </url>
+  <url><loc>https://autorenhandwerk.com/</loc></url>
+  <url><loc>https://autorenhandwerk.com/romanwerkstatt/</loc></url>
+  <url><loc>https://autorenhandwerk.com/figurenwerkstatt/</loc></url>
+  <url><loc>https://autorenhandwerk.com/szenenwerkstatt/</loc></url>
+  <url><loc>https://autorenhandwerk.com/serienbibel/</loc></url>
+  <url><loc>https://autorenhandwerk.com/weltenwerkstatt/</loc></url>
+  <url><loc>https://autorenhandwerk.com/dialogwerkstatt/</loc></url>
+  <url><loc>https://autorenhandwerk.com/ueberarbeitungswerkstatt/</loc></url>
+  <url><loc>https://autorenhandwerk.com/romanretter/</loc></url>
+  <url><loc>https://autorenhandwerk.com/veroeffentlichungswerkstatt/</loc></url>
 </urlset>
